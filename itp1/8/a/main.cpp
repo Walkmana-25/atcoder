@@ -1,10 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<char> list;
+    string s;
+    int a;
     char c;
-    while(cin >> c){
-        cout << c << endl;
+    getline(cin,s);
+    a = s.size();
+    for (int i = 0; i < a; i++)
+    {
+        c = s[i];
+        if(islower(c)){
+            c = toupper(c);
+        }else if(isupper(c)){
+            c = tolower(c);
+        }
+        cout << c;
     }
+    cout << endl;
     
 }
