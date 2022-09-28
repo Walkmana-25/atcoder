@@ -9,17 +9,17 @@
       "id": "abc069_a",
       "label": "A",
       "title": "K-City",
-      "url": "https://atcoder.jp/contests/abc069/tasks/abc069_a",
-      "directory": {
-        "path": "a",
-        "testdir": "test"
-      }
+      "url": "https://atcoder.jp/contests/abc069/tasks/abc069_a"
     },
     {
       "id": "abc069_b",
       "label": "B",
       "title": "i18n",
-      "url": "https://atcoder.jp/contests/abc069/tasks/abc069_b"
+      "url": "https://atcoder.jp/contests/abc069/tasks/abc069_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test"
+      }
     },
     {
       "id": "arc080_a",
