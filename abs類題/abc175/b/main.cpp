@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    vector<int> l;
+
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int input;
+        cin >> input;
+        l.push_back(input);
+    }
+    int count = 0;
+    for (int i = 0; i < n - 2; i++)
+    {
+        for (int j = i + 1; j < n - 1; j++)
+        {
+            for (int k = j + 1; k < n; k++)
+            {
+                int a = l[i], b = l[j], c = l[k];
+                if (abs(a - b) < c && c < (a + b))
+                {
+                    if (a != b && b != c && a != c)
+                    {
+                        count++;
+                    }
+                }
+            }
+        }
+    }
+    cout << count << endl;
+}
