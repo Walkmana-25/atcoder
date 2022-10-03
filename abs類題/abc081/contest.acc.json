@@ -15,17 +15,17 @@
       "id": "abc081_b",
       "label": "B",
       "title": "Shift only",
-      "url": "https://atcoder.jp/contests/abc081/tasks/abc081_b",
-      "directory": {
-        "path": "b",
-        "testdir": "test"
-      }
+      "url": "https://atcoder.jp/contests/abc081/tasks/abc081_b"
     },
     {
       "id": "arc086_a",
       "label": "C",
       "title": "Not so Diverse",
-      "url": "https://atcoder.jp/contests/abc081/tasks/arc086_a"
+      "url": "https://atcoder.jp/contests/abc081/tasks/arc086_a",
+      "directory": {
+        "path": "c",
+        "testdir": "test"
+      }
     },
     {
       "id": "arc086_b",
