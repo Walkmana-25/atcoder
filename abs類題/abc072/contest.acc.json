@@ -15,17 +15,17 @@
       "id": "abc072_b",
       "label": "B",
       "title": "OddString",
-      "url": "https://atcoder.jp/contests/abc072/tasks/abc072_b",
-      "directory": {
-        "path": "b",
-        "testdir": "test"
-      }
+      "url": "https://atcoder.jp/contests/abc072/tasks/abc072_b"
     },
     {
       "id": "arc082_a",
       "label": "C",
       "title": "Together",
-      "url": "https://atcoder.jp/contests/abc072/tasks/arc082_a"
+      "url": "https://atcoder.jp/contests/abc072/tasks/arc082_a",
+      "directory": {
+        "path": "c",
+        "testdir": "test"
+      }
     },
     {
       "id": "arc082_b",
