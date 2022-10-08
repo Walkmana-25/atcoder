@@ -17,8 +17,9 @@ int main()
     ll ans = 0L;
     for (auto x : a)
     {
+        long l = x - r + w - 1;
         if (x > r)
-            ans += (x - r + w - 1) / w;
+            ans += (l) / w;
         r = x + w;
     }
     cout << ans << endl;
