@@ -1,10 +1,10 @@
 {
     "configurations": [
         {
-            "name": "(gdb) 起動",
+            "name": "C/C++: g++ アクティブ ファイルのビルドとデバッグ",
             "type": "cppdbg",
             "request": "launch",
-            "program": "プログラム名を入力してください (例: ${workspaceFolder}/a.out)",
+            "program": "${fileDirname}/a.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -22,7 +22,9 @@
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
-            ]
+            ],
+            "preLaunchTask": "C/C++: gcc-10 アクティブなファイルのビルド",
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ],
     "version": "2.0.0"
