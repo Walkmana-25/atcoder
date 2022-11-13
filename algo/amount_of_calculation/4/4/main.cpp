@@ -4,32 +4,29 @@ using ll = long long;
 int main(){
     int n,d;
     cin >> n >> d;
-    vector<int> v(n + 1);
-    vector<int> ans(n - d + 2);
+    vector<int> ans(n + 1);
+    ans.at(0) = 0;
     for (int i = 1; i <= n; i++)
     {
-        cin >> v.at(i);
-        for (int j = 1; j <= n - d + 2; j++){
-            if(j <= i && j + d - 1 > i){
-                ans.at(j) += v.at(i);
-            }
-        }
+        /* code */
+        int input;
+        cin >> input;
+        ans.at(i) = ans.at(i - 1) + input;
+
     }
-
-
-    
-
-    int ans_num = -1;
+    pair<int, int> ans_pair;
     int max = -1;
-    for (int i = 1; i < n - d + 2; i++)
+
+    for (int i = 1; i <= n - d + 1; i++)
     {
-        if(ans.at(i) > max){
-            max = ans.at(i);
-            ans_num = i;
+        int current = ans.at(i + d - 1) - ans.at(i - 1);
+        if(max <= current){
+            ans_pair.first = i;
+            ans_pair.second = i + d - 1;
+            max = current;
         }
     }
-    cout << ans_num << "~" << ans_num + d - 1 << endl;
     
-    
-    
+    cout << ans_pair.first - 1 << "~" << ans_pair.second  - 1<< endl;
+
 }
