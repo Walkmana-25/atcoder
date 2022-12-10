@@ -22,7 +22,8 @@ int main(){
         for (int i = 0; i < n; i++)
         {
             /* code */
-            if(bs & (1 << i)){
+            __int128 iii = (1 << i);
+            if(bs & iii){
                 count += v.at(i);
                 cc++;
             }
