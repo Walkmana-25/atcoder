@@ -15,18 +15,18 @@
       "id": "abc150_b",
       "label": "B",
       "title": "Count ABC",
-      "url": "https://atcoder.jp/contests/abc150/tasks/abc150_b",
-      "directory": {
-        "path": "b",
-        "testdir": "test",
-        "submit": "main.cpp"
-      }
+      "url": "https://atcoder.jp/contests/abc150/tasks/abc150_b"
     },
     {
       "id": "abc150_c",
       "label": "C",
       "title": "Count Order",
-      "url": "https://atcoder.jp/contests/abc150/tasks/abc150_c"
+      "url": "https://atcoder.jp/contests/abc150/tasks/abc150_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc150_d",
