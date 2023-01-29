@@ -10,15 +10,35 @@ void input(){
 vector<int> solve(){
     vector<int> v(m);
     int output = 1;
+    int max = (m / (d - 1)) + 1;
+    while(true){
     for (int i = 0, current = 1; i < m; i++)
     { 
         /* code */
-        if(current == k){
+        if(current == max){
             current = 1;
             output++;
         }
         v.at(i) = output;
         current++;
+    }
+    output = 1;
+    if(*(v.end() - 1) > d){
+        max = k;
+    }else{
+        bool flag = true;
+        vector<int> vv(d + 1);
+        for(auto a : v){
+            vv.at(a)++;
+        }
+        for(auto a : vv){
+            if(a > k){
+                flag = false;
+                max = k;
+            }
+        }
+        if(flag){break;}
+    }
     }
     return v;
     

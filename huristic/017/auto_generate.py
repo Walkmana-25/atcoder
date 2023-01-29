@@ -26,13 +26,14 @@ def run(i):
             stdout = subprocess.PIPE,stderr = subprocess.PIPE,
             check=True
             )    
-        score = sp_2.stdout.split()[-1] # 大抵、標準出力の一番最後にスコアが出力される
+        
+        score = int(sp_2.stdout.split()[-1]) # 大抵、標準出力の一番最後にスコアが出力される
             
 
 
         print(f"{i}\tScore:\t{score}\tTime:\t{time_num}")
         with open(f"./output/{i}",mode="w") as f:
-            f.write(score)
+            f.write(str(score))
             
 
 
